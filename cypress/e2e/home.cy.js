@@ -57,7 +57,7 @@ describe('Abrir nosso coiso de descrever coisas.', () => {
         cy.get('[id=atualizar]').click();
 
         // Como ele ja vai para as infos, agora vamos editar os Epi´s
-        cy.get('[id=EditarEpi]').click();
+        cy.get('[id=EditarEpi]').first().click();
 
         //FDS
         cy.get('[id=nome]').type('armadura');
@@ -69,10 +69,10 @@ describe('Abrir nosso coiso de descrever coisas.', () => {
         cy.get('[id=salvar]').click();
 
         // apagar o fun
-        cy.get('[id=RemoverFun]').click();
+        cy.get('[id=RemoverFun]').first().click();
 
         // agora apaga epi
-        cy.get('[id=RemoverEPI]').click();
+        cy.get('[id=RemoverEPI]').first().click();
 
 
     })
